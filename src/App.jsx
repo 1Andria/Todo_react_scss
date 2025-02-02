@@ -9,7 +9,9 @@ import Trash from "./assets/Images/trash.png";
 function App() {
   const [date, setDate] = useState(GetCurrentDate());
   const [time, setTime] = useState();
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    return JSON.parse(localStorage.getItem("tasks")) || [];
+  });
   const [taskInp, setTaskInp] = useState("");
 
   function GetCurrentDate() {
@@ -32,7 +34,16 @@ function App() {
       setDate(GetCurrentDate());
       setTime(GetCurrentTime());
     }, 1000);
-  });
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    setTasks(storedTasks);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function AddTask(e) {
     e.preventDefault();
@@ -44,7 +55,7 @@ function App() {
       name: taskInp,
       checked: false,
       id: Date.now(),
-      time: GetCurrentTime(),
+      time: Date().slice(3, Date().length - 36),
     };
     setTasks([...tasks, newTask]);
     setTaskInp("");
