@@ -22,138 +22,138 @@
   font-weight: 700;
   line-height: normal;
 }
-.main_container {
-  width: 430px;
-  height: 636px;
-  border-radius: 10px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  .flower_div {
-    width: 100%;
-    height: 202px;
-    position: relative;
-    .date {
-      position: absolute;
-      top: 114px;
-      right: 28px;
-      color: #fff;
-      font-family: "Russo One";
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    .time {
-      position: absolute;
-      top: 131px;
-      right: 28px;
-      color: #fff;
-      font-family: "Russo One";
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-}
-.tasks_add {
-  display: flex;
-  position: relative;
-  margin: 23px 28px 36px 28px;
-  gap: 10px;
-  input {
-    width: 275px;
-    height: 49px;
-    padding-left: 48px;
-    color: #888;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 5px;
-    background: #ebeff2;
-    border: none;
-    outline: none;
-  }
-  button {
-    display: flex;
-    width: 88px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 11px;
-    flex-shrink: 0;
-    align-self: stretch;
-    border-radius: 5px;
-    background: #20eeb0;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  & button:hover {
-    opacity: 0.5;
-    transition: 0.4s;
-  }
-  .done {
-    position: absolute;
-    top: 12px;
-    left: 14px;
-  }
-}
-.task_div {
-  width: 100%;
-  padding-left: 28px;
-  padding-right: 28px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  .task {
-    display: flex;
-    width: 100%;
-    margin-right: 28px;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    margin-bottom: 24px;
-    .task_name {
-      color: #0d0d0d;
-      font-family: Inter;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    .task_name_plus {
-      text-decoration: line-through gray 1px;
-    }
-    .task_time {
-      color: #888;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    .done_trash {
-      display: flex;
-      gap: 14px;
-      .checkbox {
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-      }
-      .trash_btn {
-        width: 24px;
-        height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-      }
-    }
-  }
-}
+// .main_container {
+//   width: 430px;
+//   height: 636px;
+//   border-radius: 10px;
+//   background: #fff;
+//   display: flex;
+//   flex-direction: column;
+//   .flower_div {
+//     width: 100%;
+//     height: 202px;
+//     position: relative;
+//     .date {
+//       position: absolute;
+//       top: 114px;
+//       right: 28px;
+//       color: #fff;
+//       font-family: "Russo One";
+//       font-size: 18px;
+//       font-style: normal;
+//       font-weight: 400;
+//       line-height: normal;
+//     }
+//     .time {
+//       position: absolute;
+//       top: 131px;
+//       right: 28px;
+//       color: #fff;
+//       font-family: "Russo One";
+//       font-size: 48px;
+//       font-style: normal;
+//       font-weight: 400;
+//       line-height: normal;
+//     }
+//   }
+// }
+// .tasks_add {
+//   display: flex;
+//   position: relative;
+//   margin: 23px 28px 36px 28px;
+//   gap: 10px;
+//   input {
+//     width: 275px;
+//     height: 49px;
+//     padding-left: 48px;
+//     color: #888;
+//     font-family: Inter;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: normal;
+//     border-radius: 5px;
+//     background: #ebeff2;
+//     border: none;
+//     outline: none;
+//   }
+//   button {
+//     display: flex;
+//     width: 88px;
+//     padding: 10px;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 11px;
+//     flex-shrink: 0;
+//     align-self: stretch;
+//     border-radius: 5px;
+//     background: #20eeb0;
+//     border: none;
+//     font-size: 25px;
+//     cursor: pointer;
+//     transition: 0.4s;
+//   }
+//   & button:hover {
+//     opacity: 0.5;
+//     transition: 0.4s;
+//   }
+//   .done {
+//     position: absolute;
+//     top: 12px;
+//     left: 14px;
+//   }
+// }
+// .task_div {
+//   width: 100%;
+//   padding-left: 28px;
+//   padding-right: 28px;
+//   overflow-y: auto;
+//   overflow-x: hidden;
+//   .task {
+//     display: flex;
+//     width: 100%;
+//     margin-right: 28px;
+//     justify-content: space-between;
+//     height: 60px;
+//     align-items: center;
+//     margin-bottom: 24px;
+//     .task_name {
+//       color: #0d0d0d;
+//       font-family: Inter;
+//       font-size: 18px;
+//       font-style: normal;
+//       font-weight: 500;
+//       line-height: normal;
+//     }
+//     .task_name_plus {
+//       text-decoration: line-through gray 1px;
+//     }
+//     .task_time {
+//       color: #888;
+//       font-family: Inter;
+//       font-size: 14px;
+//       font-style: normal;
+//       font-weight: 400;
+//       line-height: normal;
+//     }
+//     .done_trash {
+//       display: flex;
+//       gap: 14px;
+//       .checkbox {
+//         width: 24px;
+//         height: 24px;
+//         cursor: pointer;
+//       }
+//       .trash_btn {
+//         width: 24px;
+//         height: 24px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         border: none;
+//         background-color: transparent;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }

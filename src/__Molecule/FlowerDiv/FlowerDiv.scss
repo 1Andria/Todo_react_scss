@@ -1,0 +1,27 @@
+.flower_div {
+  width: 100%;
+  height: 202px;
+  position: relative;
+  .date {
+    position: absolute;
+    top: 114px;
+    right: 28px;
+    color: #fff;
+    font-family: "Russo One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .time {
+    position: absolute;
+    top: 131px;
+    right: 28px;
+    color: #fff;
+    font-family: "Russo One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

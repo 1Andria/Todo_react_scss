@@ -1,0 +1,58 @@
+.task_div {
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  .task {
+    display: flex;
+    width: 100%;
+    margin-right: 28px;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 24px;
+    .task_name {
+      color: #0d0d0d;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .task_name_plus {
+      text-decoration: line-through black 2px;
+    }
+    .task_time {
+      color: #888;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .done_trash {
+      display: flex;
+      gap: 14px;
+      .checkbox {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+      .trash_btn {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .trash_btn:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+}

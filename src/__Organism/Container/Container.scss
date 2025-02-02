@@ -1,0 +1,21 @@
+.main_container {
+  width: 430px;
+  height: 636px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.main_container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.main_container::-webkit-scrollbar-thumb {
+  background-color: #e1a100;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
